@@ -934,8 +934,8 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
 
 acorn@^5.2.1:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
 
 ansi-html@^0.0.7:
   version "0.0.7"
@@ -1429,6 +1429,12 @@ cross-spawn@^6.0.0:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
+crypto-random-string@^3.0.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-3.2.0.tgz#d513ef0c2ac6ff7cad5769de585d9bf2ad5a2b4d"
+  dependencies:
+    type-fest "^0.8.1"
+
 css-b64-images@~0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/css-b64-images/-/css-b64-images-0.2.5.tgz#42005d83204b2b4a5d93b6b1a5644133b5927a02"
@@ -1617,6 +1623,42 @@ d3-zoom@1:
     d3-selection "1"
     d3-transition "1"
 
+d3@^5.14:
+  version "5.15.1"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-5.15.1.tgz#7a8f32208559505bf1f56537a31c3fb8e76a519b"
+  dependencies:
+    d3-array "1"
+    d3-axis "1"
+    d3-brush "1"
+    d3-chord "1"
+    d3-collection "1"
+    d3-color "1"
+    d3-contour "1"
+    d3-dispatch "1"
+    d3-drag "1"
+    d3-dsv "1"
+    d3-ease "1"
+    d3-fetch "1"
+    d3-force "1"
+    d3-format "1"
+    d3-geo "1"
+    d3-hierarchy "1"
+    d3-interpolate "1"
+    d3-path "1"
+    d3-polygon "1"
+    d3-quadtree "1"
+    d3-random "1"
+    d3-scale "2"
+    d3-scale-chromatic "1"
+    d3-selection "1"
+    d3-shape "1"
+    d3-time "1"
+    d3-time-format "2"
+    d3-timer "1"
+    d3-transition "1"
+    d3-voronoi "1"
+    d3-zoom "1"
+
 d3@^5.7.0:
   version "5.11.0"
   resolved "https://registry.yarnpkg.com/d3/-/d3-5.11.0.tgz#d5ffc84f930eeb895d88699195d2d852778ab158"
@@ -1660,12 +1702,28 @@ dagre-d3-renderer@^0.5.8:
     dagre-layout "^0.8.8"
     lodash "^4.17.5"
 
+dagre-d3@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/dagre-d3/-/dagre-d3-0.6.4.tgz#0728d5ce7f177ca2337df141ceb60fbe6eeb7b29"
+  dependencies:
+    d3 "^5.14"
+    dagre "^0.8.5"
+    graphlib "^2.1.8"
+    lodash "^4.17.15"
+
 dagre-layout@^0.8.8:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/dagre-layout/-/dagre-layout-0.8.8.tgz#9b6792f24229f402441c14162c1049e3f261f6d9"
   dependencies:
     graphlibrary "^2.2.0"
     lodash "^4.17.5"
+
+dagre@^0.8.4, dagre@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/dagre/-/dagre-0.8.5.tgz#ba30b0055dac12b6c1fcc247817442777d06afee"
+  dependencies:
+    graphlib "^2.1.8"
+    lodash "^4.17.15"
 
 date-fns@^2.0.0-beta.4:
   version "2.0.1"
@@ -2216,6 +2274,12 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
+graphlib@^2.1.7, graphlib@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/graphlib/-/graphlib-2.1.8.tgz#5761d414737870084c92ec7b5dbcb0592c9d35da"
+  dependencies:
+    lodash "^4.17.15"
+
 graphlibrary@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/graphlibrary/-/graphlibrary-2.2.0.tgz#017a14899775228dec4497a39babfdd6bf56eac6"
@@ -2750,7 +2814,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.5:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.5:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -2887,6 +2951,22 @@ mermaid@^8.1.0:
     dagre-layout "^0.8.8"
     documentation "^12.0.1"
     graphlibrary "^2.2.0"
+    he "^1.2.0"
+    lodash "^4.17.11"
+    minify "^4.1.1"
+    moment-mini "^2.22.1"
+    scope-css "^1.2.1"
+
+mermaid@^8.2.6:
+  version "8.4.8"
+  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-8.4.8.tgz#8adcfdbc505d6bca52df167cff690427c9727b60"
+  dependencies:
+    "@braintree/sanitize-url" "^3.1.0"
+    crypto-random-string "^3.0.1"
+    d3 "^5.7.0"
+    dagre "^0.8.4"
+    dagre-d3 "^0.6.4"
+    graphlib "^2.1.7"
     he "^1.2.0"
     lodash "^4.17.11"
     minify "^4.1.1"
@@ -4165,6 +4245,10 @@ try-catch@^2.0.0:
 try-to-catch@^1.0.2:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/try-to-catch/-/try-to-catch-1.1.1.tgz#770162dd13b9a0e55da04db5b7f888956072038a"
+
+type-fest@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
 
 typedarray@^0.0.6, typedarray@~0.0.5:
   version "0.0.6"
